@@ -1,0 +1,7 @@
+#!/bin/bash
+
+export SERVICE_NAME=jenkins
+
+export SERVICE_JENKINS_IMAGE_VERSION=v1.0.0
+
+export SERVICE_JENKINS_PORT=${SERVICE_JENKINS_PORT}
