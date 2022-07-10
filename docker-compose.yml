@@ -5,7 +5,10 @@ services:
     restart: always
     image: whatwewant/jenkins:${SERVICE_JENKINS_IMAGE_VERSION}
     ports:
-      - 0.0.0.0:${SERVICE_JENKINS_PORT}:80
+      # - 0.0.0.0:${SERVICE_JENKINS_PORT}:80
+      - 0.0.0.0:${SERVICE_JENKINS_PORT}:8080
+      # - 0.0.0.0:${SERVICE_JENKINS_PORT}:50000
+      # - 0.0.0.0:${SERVICE_JENKINS_PORT}:10051
     volumes:
       - ${SERVICE_DATA}/jenkins:/var/jenkins_home
       - /var/run/docker.sock:/var/run/docker.sock
