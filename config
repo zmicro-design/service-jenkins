@@ -2,6 +2,8 @@
 
 export SERVICE_NAME=jenkins
 
-export SERVICE_JENKINS_IMAGE_VERSION=v1.0.0
+export SERVICE_JENKINS_IMAGE_VERSION=v1.0.4
 
 export SERVICE_JENKINS_PORT=${SERVICE_JENKINS_PORT}
+
+export DOCKER_GROUP_ID=$(ls -n /var/run/docker.sock | awk '{print $4}')
